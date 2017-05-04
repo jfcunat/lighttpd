@@ -1,2 +1,2 @@
 # lighttpd
-simple docker image for a lighthttpd server
+simple docker image for a lighttpd server
