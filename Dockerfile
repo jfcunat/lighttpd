@@ -36,4 +36,4 @@ USER 1001
 EXPOSE 8080
 
 # TODO: Set the default CMD for the image
-CMD ["lighttpd", "-D", "-f", "/opt/app-root/etc/lighttpd.conf"]
+CMD ["usage]

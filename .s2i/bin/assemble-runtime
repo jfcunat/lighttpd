@@ -1,2 +1,17 @@
-echo "---> copying application runtime artifacts..."
-cp -Rf /tmp/src/. ./
+#!/bin/bash -e
+#
+# S2I assemble script for the 'lighthttpd' image.
+# The 'assemble' script builds your application source so that it is ready to run.
+#
+# For more information refer to the documentation:
+#	https://github.com/openshift/source-to-image/blob/master/docs/builder_image.md
+#
+
+if [[ "$1" == "-h" ]]; then
+	# If the 'lightttpd' assemble script is executed with '-h' flag,
+	# print the usage.
+	exec /usr/libexec/s2i/usage
+fi
+
+# Copy Built sources to the folder used by lighttpd
+echo "---> Installing application source..."

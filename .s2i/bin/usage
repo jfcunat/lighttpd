@@ -1,0 +1,3 @@
+cat <<EOF
+This is a S2I lighttpd base image
+EOF
