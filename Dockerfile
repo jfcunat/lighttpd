@@ -16,6 +16,7 @@ LABEL io.k8s.description="Platform to expose static web site with lighttpd" \
       io.openshift.tags="builder, lighttpd."
 RUN apt-get update && apt-get install -y lighttpd
 
+COPY ./.s2i/bin /usr/libexec/s2i
 
 RUN mkdir -p /opt/app-root/etc ; mkdir -p /opt/app-root/src
 WORKDIR /opt/app-root/src

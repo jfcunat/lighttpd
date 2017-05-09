@@ -1,0 +1,2 @@
+echo "---> copying application runtime artifacts..."
+cp -Rf /tmp/src/. ./
