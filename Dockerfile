@@ -1,8 +1,8 @@
 
-# s2i-lighttpd
+# lighttpd
 FROM ubuntu
 
-MAINTAINER Marc Despland <marc.despland@orange.com>
+MAINTAINER Jean-François Cunat <jeanfrancois.cunat@orange.com>
 
 # TODO: Rename the builder environment variable to inform users about application you provide them
 ENV BUILDER_VERSION 1.0
