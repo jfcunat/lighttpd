@@ -15,3 +15,5 @@ fi
 
 # Copy Built sources to the folder used by lighttpd
 echo "---> Installing application source..."
+cp -Rf webapp*/. ./
+

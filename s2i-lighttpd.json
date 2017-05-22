@@ -1,0 +1,30 @@
+{
+  "kind": "ImageStream",
+  "apiVersion": "v1",
+  "metadata": {
+  "name": "lighttpd",
+  "annotations": {
+    "openshift.io/display-name": "lighttpd"
+    }
+  },
+  "spec": {
+    "dockerImageRepository": "docker.io/jfcunat/lighttpd",
+    "tags": [
+       {
+        "name": "latest",
+        "from": {
+          "kind": "DockerImage",
+          "name": "docker.io/jfcunat/lighttpd"
+        },
+        "annotations": {
+          "openshift.io/display-name": "lighttpd",
+          "description": "Expose a simple lighttpd server",
+          "iconClass": "icon-play",
+          "tags": "lighttpd",
+          "supports":"lighttpd",
+          "version":"1.x"
+        }
+      }
+    ]
+  }
+}
